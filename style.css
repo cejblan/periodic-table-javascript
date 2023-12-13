@@ -1,0 +1,227 @@
+/* Globals */
+body {
+    font-family: Roboto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.875rem;
+    margin: 0;
+}
+
+a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Fin Globals */
+/* Navbar */
+nav {
+    background-color: #2563eb;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+nav,
+nav .menu a {
+    box-shadow: 0 0 7px black;
+}
+
+nav img {
+    filter: drop-shadow(0 0 3px black);
+}
+
+nav img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.3rem;
+}
+
+nav div {
+    padding: 0 1rem;
+    font-weight: 500;
+}
+
+nav p {
+    margin: auto 1.5rem;
+}
+
+nav p a {
+    background: #f97316;
+    text-align: center;
+    display: block;
+    width: 132%;
+    border-radius: 1rem;
+}
+
+nav p a:hover {
+    color: #2563eb !important;
+}
+
+nav form .caja {
+    position: absolute;
+    right: 3rem;
+}
+
+nav form input.search {
+    height: 2.1rem;
+    margin: auto;
+    display: block;
+}
+
+/* Fin Navbar */
+/* Section */
+section {
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(18, minmax(0, 4rem));
+    gap: 0.3rem;
+    padding: 3rem;
+}
+
+/* Fin Section */
+/* Tabla Periodica */
+.noMetalesReactivos,
+.metalesAlcalinos,
+.metalesAlcalinoterreos,
+.metalesTransicionales,
+.metalesPostransicionales,
+.metaloides,
+.gasesNobles,
+.propiedadesDesconocidas,
+.lantanidos,
+.actinoides {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 50%;
+    padding: 0.9rem 0;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 3px black;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    position: relative;
+    z-index: 3;
+}
+
+.noMetalesReactivos:hover,
+.metalesAlcalinos:hover,
+.metalesAlcalinoterreos:hover,
+.metalesTransicionales:hover,
+.metalesPostransicionales:hover,
+.metaloides:hover,
+.gasesNobles:hover,
+.propiedadesDesconocidas:hover,
+.lantanidos:hover,
+.actinoides:hover {
+    width: 200%;
+    height: 150%;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    position: relative;
+    z-index: 7;
+    
+    .numeroAtomico {
+        display: block;
+        font-size: 1rem;
+        position: absolute;
+        top: -24%;
+        left: 7%;
+    }
+}
+
+.noMetalesReactivos {
+    background-color: blue;
+}
+
+.metalesAlcalinos {
+    background-color: aquamarine;
+}
+
+.metalesAlcalinoterreos {
+    background-color: red;
+}
+
+.metalesTransicionales {
+    background-color: blueviolet;
+}
+
+.metalesPostransicionales {
+    background-color: chartreuse;
+}
+
+.metaloides {
+    background-color: chocolate;
+}
+
+.gasesNobles {
+    background-color: indianred;
+}
+
+.propiedadesDesconocidas {
+    background-color: grey;
+}
+
+.lantanidos {
+    background-color: #2563eb;
+}
+
+.actinoides {
+    background-color: #f97316;
+}
+
+.numeroAtomico {
+    display: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #2563eb;
+    position: relative;
+    z-index: 999;
+}
+
+/* Fin Footer */
+
+/* Adaptar pantalla dispositivos móviles */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .grid {
+        display: block;
+    }
+
+    .noMetalesReactivos,
+    .metalesAlcalinos,
+    .metalesAlcalinoterreos,
+    .metalesTransicionales,
+    .metalesPostransicionales,
+    .metaloides,
+    .gasesNobles,
+    .propiedadesDesconocidas,
+    .lantanidos,
+    .actinoides {
+        font-size: 2.5rem;
+        padding: 7rem 0;
+        margin-bottom: 1rem;
+    }
+
+}

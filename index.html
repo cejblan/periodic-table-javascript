@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Periodic Table JS</title>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="flex shadow">
+        <div>
+            <a class="flex" href="/">
+                <img src="./public/logo.png" alt="Logo Cejblan" />
+            </a>
+        </div>
+        <div class="menu flex">
+            <p>
+                <a href="https://www.instagram.com/cejblan/" target="_blank">Instagram</a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/francisco-gonzalez-449a98154/" target="_blank">Linkedin</a>
+            </p>
+            <p>
+                <a href="https://gitdub.com/cejblan" target="_blank">Gitdub</a>
+            </p>
+            <p>
+                <a href="https://codepen.io/Francisco-Gonzalez-cejblan" target="_blank">Codepen</a>
+            </p>
+        </div>
+        <form action="">
+            <div class="caja flex">
+                <img src="./public/lupa.png" alt="search" />
+                <input class="search" type="search" name="search" id="search">
+            </div>
+        </form>
+    </nav>
+    <section class="home">
+        <div>
+            <h2>Bienvenido a mi:</h2>
+            <h1>Tabla Periodica Interactiva</h1>
+        </div>
+        <div class="grid">
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">1</p>
+                    H
+                </div>
+            </a>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <a href="">
+                <div class="gasesNobles">
+                    <p class="numeroAtomico">2</p>
+                    He
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinos">
+                    <p class="numeroAtomico">3</p>
+                    Li
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinoterreos">
+                    <p class="numeroAtomico">4</p>
+                    Be
+                </div>
+            </a>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <a href="">
+                <div class="metaloides">
+                    <p class="numeroAtomico">5</p>
+                    B
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">6</p>
+                    C
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">7</p>
+                    N
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">8</p>
+                    O
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">9</p>
+                    F
+                </div>
+            </a>
+            <a href="">
+                <div class="gasesNobles">
+                    <p class="numeroAtomico">10</p>
+                    Ne
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinos">
+                    <p class="numeroAtomico">11</p>
+                    Na
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinoterreos">
+                    <p class="numeroAtomico">12</p>
+                    Mg
+                </div>
+            </a>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <a href="">
+                <div class="metalesPostransicionales">
+                    <p class="numeroAtomico">13</p>
+                    Al
+                </div>
+            </a>
+            <a href="">
+                <div class="metaloides">
+                    <p class="numeroAtomico">14</p>
+                    Si
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">15</p>
+                    P
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">16</p>
+                    S
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">17</p>
+                    Cl
+                </div>
+            </a>
+            <a href="">
+                <div class="gasesNobles">
+                    <p class="numeroAtomico">18</p>
+                    Ar
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinos">
+                    <p class="numeroAtomico">19</p>
+                    K
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinoterreos">
+                    <p class="numeroAtomico">20</p>
+                    Ca
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">21</p>
+                    Sc
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">22</p>
+                    Ti
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">23</p>
+                    V
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">24</p>
+                    Cr
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">25</p>
+                    Mn
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">26</p>
+                    Fe
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">27</p>
+                    Co
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">28</p>
+                    Ni
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">29</p>
+                    Cu
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">30</p>
+                    Zn
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesPostransicionales">
+                    <p class="numeroAtomico">31</p>
+                    Ga
+                </div>
+            </a>
+            <a href="">
+                <div class="metaloides">
+                    <p class="numeroAtomico">32</p>
+                    Ge
+                </div>
+            </a>
+            <a href="">
+                <div class="metaloides">
+                    <p class="numeroAtomico">33</p>
+                    As
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">34</p>
+                    Se
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">35</p>
+                    Br
+                </div>
+            </a>
+            <a href="">
+                <div class="gasesNobles">
+                    <p class="numeroAtomico">36</p>
+                    Kr
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinos">
+                    <p class="numeroAtomico">37</p>
+                    Rb
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinoterreos">
+                    <p class="numeroAtomico">38</p>
+                    Sr
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">39</p>
+                    Y
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">40</p>
+                    Zr
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">41</p>
+                    Nb
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">42</p>
+                    Mo
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">43</p>
+                    Tc
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">44</p>
+                    Ru
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">45</p>
+                    Rh
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">46</p>
+                    Pd
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">47</p>
+                    Ag
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">48</p>
+                    Cd
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesPostransicionales">
+                    <p class="numeroAtomico">49</p>
+                    In
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesPostransicionales">
+                    <p class="numeroAtomico">50</p>
+                    Sn
+                </div>
+            </a>
+            <a href="">
+                <div class="metaloides">
+                    <p class="numeroAtomico">51</p>
+                    Sb
+                </div>
+            </a>
+            <a href="">
+                <div class="metaloides">
+                    <p class="numeroAtomico">52</p>
+                    Te
+                </div>
+            </a>
+            <a href="">
+                <div class="noMetalesReactivos">
+                    <p class="numeroAtomico">53</p>
+                    I
+                </div>
+            </a>
+            <a href="">
+                <div class="gasesNobles">
+                    <p class="numeroAtomico">54</p>
+                    Xe
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinos">
+                    <p class="numeroAtomico">55</p>
+                    Cs
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinoterreos">
+                    <p class="numeroAtomico">56</p>
+                    Ba
+                </div>
+            </a>
+            <a href="">
+                <div class="lantanidos">
+                    <p class="numeroAtomico">57</p>
+                    La
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">72</p>
+                    Hf
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">73</p>
+                    Ta
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">74</p>
+                    W
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">75</p>
+                    Re
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">76</p>
+                    Os
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">77</p>
+                    Ir
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">78</p>
+                    Pt
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">79</p>
+                    Au
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">80</p>
+                    Hg
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesPostransicionales">
+                    <p class="numeroAtomico">81</p>
+                    Tl
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesPostransicionales">
+                    <p class="numeroAtomico">82</p>
+                    Pb
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesPostransicionales">
+                    <p class="numeroAtomico">83</p>
+                    Bi
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesPostransicionales">
+                    <p class="numeroAtomico">84</p>
+                    Po
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesPostransicionales">
+                    <p class="numeroAtomico">85</p>
+                    At
+                </div>
+            </a>
+            <a href="">
+                <div class="gasesNobles">
+                    <p class="numeroAtomico">86</p>
+                    Rn
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinos">
+                    <p class="numeroAtomico">87</p>
+                    Fr
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesAlcalinoterreos">
+                    <p class="numeroAtomico">88</p>
+                    Ra
+                </div>
+            </a>
+            <a href="">
+                <div class="actinoides">
+                    <p class="numeroAtomico">89</p>
+                    Ac
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">104</p>
+                    Rf
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">105</p>
+                    Db
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">106</p>
+                    Sg
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">107</p>
+                    Bh
+                </div>
+            </a>
+            <a href="">
+                <div class="metalesTransicionales">
+                    <p class="numeroAtomico">108</p>
+                    Hs
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">109</p>
+                    Mt
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">110</p>
+                    Ds
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">111</p>
+                    Rg
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">112</p>
+                    Cn
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">113</p>
+                    Nh
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">114</p>
+                    Fl
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">115</p>
+                    Mc
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">116</p>
+                    Lv
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">117</p>
+                    Ts
+                </div>
+            </a>
+            <a href="">
+                <div class="propiedadesDesconocidas">
+                    <p class="numeroAtomico">118</p>
+                    Og
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>Tabla Periodica Interactiva con JavaScript, HTML y CSS - © Copyright 2024 - Diseño Cejblan</p>
+        <a href="./privacy">Politicas de privacidad
+    </footer>
+</body>
+
+</html>
