@@ -114,9 +114,36 @@ section {
     border: 1px solid black;
     border-radius: 0.5rem;
     box-shadow: 0 0 3px black;
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     position: relative;
+    top: 0;
+    left: 0;
     z-index: 3;
+    transition:
+        top 0.5s ease-in-out,
+        left 0.5s ease-in-out,
+        width 0.5s ease-in-out,
+        height 0.5s ease-in-out;
+
+    .numeroAtomico {
+        font-size: 2rem;
+    }
+
+    .masaAtomica {
+        font-size: 1.2rem;
+    }
+
+    .numeroAtomico,
+    .masaAtomica {
+        display: none;
+    }
+
+    .numeroAtomico,
+    .masaAtomica,
+    .simboloU,
+    .simboloD {
+        margin: auto;
+    }
+
 }
 
 .noMetalesReactivos:hover,
@@ -129,18 +156,46 @@ section {
 .propiedadesDesconocidas:hover,
 .lantanidos:hover,
 .actinoides:hover {
-    width: 200%;
-    height: 150%;
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    width: 208%;
+    height: 157%;
     position: relative;
+    top: -1.75rem;
+    left: -1.75rem;
     z-index: 7;
-    
+    transition:
+        top 0.5s ease-in-out,
+        left 0.5s ease-in-out,
+        width 0.5s ease-in-out,
+        height 0.5s ease-in-out;
+
     .numeroAtomico {
         display: block;
-        font-size: 1rem;
         position: absolute;
-        top: -24%;
-        left: 7%;
+        top: 3%;
+        left: 6%;
+    }
+
+    .masaAtomica {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 6%;
+    }
+
+    .simboloU,
+    .simboloD {
+        display: block;
+        position: absolute;
+        top: 24%;
+        font-size: 3rem;
+    }
+
+    .simboloU {
+        left: 36%;
+    }
+
+    .simboloD {
+        left: 25%;
     }
 }
 
@@ -149,7 +204,7 @@ section {
 }
 
 .metalesAlcalinos {
-    background-color: aquamarine;
+    background-color: cadetblue;
 }
 
 .metalesAlcalinoterreos {
@@ -183,11 +238,6 @@ section {
 .actinoides {
     background-color: #f97316;
 }
-
-.numeroAtomico {
-    display: none;
-}
-
 
 /* Footer */
 footer {
