@@ -129,7 +129,7 @@ section {
     }
 
     .masaAtomica {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .numeroAtomico,
@@ -139,11 +139,9 @@ section {
 
     .numeroAtomico,
     .masaAtomica,
-    .simboloU,
-    .simboloD {
+    .simbolo {
         margin: auto;
     }
-
 }
 
 .noMetalesReactivos:hover,
@@ -182,20 +180,12 @@ section {
         right: 6%;
     }
 
-    .simboloU,
-    .simboloD {
+    .simbolo {
         display: block;
-        position: absolute;
-        top: 24%;
+        position: relative;
+        top: 40%;
         font-size: 3rem;
-    }
-
-    .simboloU {
-        left: 36%;
-    }
-
-    .simboloD {
-        left: 25%;
+        line-height: 1rem;
     }
 }
 
@@ -247,7 +237,6 @@ footer {
 }
 
 /* Fin Footer */
-
 /* Adaptar pantalla dispositivos móviles */
 @media (max-width: 768px) {
 
