@@ -29,7 +29,7 @@ a {
 /* Navbar */
 nav {
     background-color: #2563eb;
-    color: white;
+    color: white !important;
     font-size: 1.5rem;
     padding: 0 1rem;
 }
@@ -119,27 +119,24 @@ section {
     left: 0;
     z-index: 3;
     transition:
-        top 0.5s ease-in-out,
-        left 0.5s ease-in-out,
-        width 0.5s ease-in-out,
-        height 0.5s ease-in-out;
-
-    .numeroAtomico {
-        font-size: 2rem;
-    }
-
-    .masaAtomica {
-        font-size: 1.5rem;
-    }
+        top 0.3s ease-in-out,
+        left 0.3s ease-in-out,
+        width 0.3s ease-in-out,
+        height 0.3s ease-in-out;
 
     .numeroAtomico,
-    .masaAtomica {
+    .masaAtomica,
+    .elemento {
+        color: transparent;
+        font-size: 0.5rem;
         display: none;
+        position: absolute;
     }
 
     .numeroAtomico,
     .masaAtomica,
-    .simbolo {
+    .simbolo,
+    .elemento {
         margin: auto;
     }
 }
@@ -154,38 +151,51 @@ section {
 .propiedadesDesconocidas:hover,
 .lantanidos:hover,
 .actinoides:hover {
-    width: 208%;
-    height: 157%;
+    width: 317%;
+    height: 267%;
     position: relative;
-    top: -1.75rem;
-    left: -1.75rem;
+    top: -4rem;
+    left: -4rem;
     z-index: 7;
     transition:
-        top 0.5s ease-in-out,
-        left 0.5s ease-in-out,
-        width 0.5s ease-in-out,
-        height 0.5s ease-in-out;
+        top 0.3s ease-in-out 0.5s,
+        left 0.3s ease-in-out 0.5s,
+        width 0.3s ease-in-out 0.5s,
+        height 0.3s ease-in-out 0.5s;
+
+    .numeroAtomico,
+    .masaAtomica,
+    .simbolo,
+    .elemento {
+        color: white;
+        line-height: 0;
+        display: block;
+        transition: font-size 0.3s ease-in-out 0.5s,
+            color 0.3s ease-in-out 0.5s;
+    }
 
     .numeroAtomico {
-        display: block;
-        position: absolute;
-        top: 3%;
+        font-size: 2rem;
+        top: 12%;
         left: 6%;
     }
 
     .masaAtomica {
-        display: block;
-        position: absolute;
-        top: 3%;
+        font-size: 1.5rem;
+        top: 12%;
         right: 6%;
     }
 
     .simbolo {
-        display: block;
+        font-size: 6rem;
         position: relative;
-        top: 40%;
-        font-size: 3rem;
-        line-height: 1rem;
+        top: 50%;
+    }
+
+    .elemento {
+        font-size: 1.5rem;
+        position: relative;
+        top: 96%;
     }
 }
 
